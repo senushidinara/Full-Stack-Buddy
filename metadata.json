@@ -1,0 +1,5 @@
+{
+  "name": "Full-Stack Buddy",
+  "description": "An AI-powered assistant to help you generate full-stack applications. Describe your needs for frontend, backend, or both, and get complete, integrated code solutions.",
+  "requestFramePermissions": []
+}
