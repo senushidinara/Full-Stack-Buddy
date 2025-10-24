@@ -173,46 +173,52 @@ Full-Stack-Buddy/
 
 ⸻
 
-⚡ How It Works
-	1.	Enter your task or idea 🧠
-→ Example: “Build a login page with Node.js backend and React frontend.”
-	2.	Select generation type 🧩
-→ Backend Only 🛠️, Frontend Only 🎨, or Full-Stack 🧩
-	3.	Gemini API generates structured JSON 🤖
-→ { overview, backend, frontend }
-	4.	View results in tabs 🗂️
-→ Overview 📝, Backend 🛠️, Frontend 🎨 with syntax highlighting 🌈
-	5.	Secure API Key management 🔑
-→ Enter or update Gemini key (masked, validated, and saved in localStorage)
+## ⚡ How It Works
 
-⸻
+1. **Enter your task or idea** 🧠  
+   → Example: “Build a login page with Node.js backend and React frontend.”
 
-🔐 API Key Manager
+2. **Select generation type** 🧩  
+   → Backend Only 🛠️, Frontend Only 🎨, or Full-Stack 🧩
 
-Feature	Description
-🔑 Input Gemini API key	Enter and validate directly in the app.
-👀 Masked Display	Keeps key hidden unless toggled.
-💾 Local Persistence	Saved securely in browser localStorage.
-❌ Clear Function	Remove or reset key anytime.
-🧩 Validation	Checks for correct key format before sending API requests.
+3. **Gemini API generates structured JSON** 🤖  
+   → `{ overview, backend, frontend }`
 
+4. **View results in tabs** 🗂️  
+   → Overview 📝, Backend 🛠️, Frontend 🎨 with syntax highlighting 🌈
 
-⸻
+5. **Secure API Key management** 🔑  
+   → Enter or update Gemini key (masked, validated, and saved in localStorage)
 
-💡 Coming Soon
+---
 
-Feature	Description
-📂 Code Export	Download generated frontend/backend as runnable files.
-🧰 Template Library	Node.js, Django, Flask, React, Vue, etc.
-👀 Live Preview	Real-time rendering of generated frontend UI.
-☁️ Cloud Storage	Save prompts and outputs with account authentication.
-🏢 Enterprise Mode	Encrypted key storage & team collaboration.
+## 🔐 API Key Manager
 
+| Feature | Description |
+|----------|-------------|
+| 🔑 **Input Gemini API key** | Enter and validate directly in the app. |
+| 👀 **Masked Display** | Keeps key hidden unless toggled. |
+| 💾 **Local Persistence** | Saved securely in browser localStorage. |
+| ❌ **Clear Function** | Remove or reset key anytime. |
+| 🧩 **Validation** | Checks for correct key format before sending API requests. |
 
-⸻
+---
 
-🧑‍💻 Usage Example
+## 💡 Coming Soon
 
+| Feature | Description |
+|----------|-------------|
+| 📂 **Code Export** | Download generated frontend/backend as runnable files. |
+| 🧰 **Template Library** | Node.js, Django, Flask, React, Vue, etc. |
+| 👀 **Live Preview** | Real-time rendering of generated frontend UI. |
+| ☁️ **Cloud Storage** | Save prompts and outputs with account authentication. |
+| 🏢 **Enterprise Mode** | Encrypted key storage & team collaboration. |
+
+---
+
+## 🧑‍💻 Usage Example
+
+```tsx
 // Example usage of geminiService
 import { generateCode } from './services/geminiService';
 
@@ -221,38 +227,4 @@ const handleGenerate = async () => {
   const response = await generateCode(prompt, "fullstack");
   console.log(response.overview, response.backend, response.frontend);
 };
-
-
-⸻
-
-🧾 License
-
-This project is licensed under the MIT License — feel free to use, modify, and distribute.
-
-⸻
-
-🧡 Made With
-
-Technology	Emoji
-React	⚛️
-TypeScript	🖌️
-Node.js	🖥️
-Express	🛠️
-Gemini API	🤖
-CSS Modules	💅
-Netlify	⚡
-
-
-⸻
-
-🚀 Full-Stack Buddy — because one smart prompt deserves a full-stack solution.
-
-⸻
-
-
-</details>
 ```
-
-
-
-⸻
